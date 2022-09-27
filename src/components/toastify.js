@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {
-  View, Text, Animated, Dimensions, ViewPropTypes,
+  View, Text, Animated, Dimensions
 } from 'react-native';
 import PropTypes from 'prop-types';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import styles from '../styles/toastify';
 
 const { height } = Dimensions.get('window');
