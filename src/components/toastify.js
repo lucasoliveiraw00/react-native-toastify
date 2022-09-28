@@ -3,7 +3,7 @@ import {
   View, Text, Animated, Dimensions
 } from 'react-native';
 import PropTypes from 'prop-types';
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+import { TextPropTypes, ViewPropTypes } from 'deprecated-react-native-prop-types';
 import styles from '../styles/toastify';
 
 const { height } = Dimensions.get('window');
@@ -16,7 +16,7 @@ export default class Toastify extends Component {
       'center',
       'bottom',
     ]),
-    textStyle: Text.propTypes.style,
+    textStyle: TextPropTypes.style,
     positionValue: PropTypes.number,
     fadeInDuration: PropTypes.number,
     fadeOutDuration: PropTypes.number,
